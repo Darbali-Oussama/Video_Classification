@@ -24,6 +24,6 @@ The Mobilenet-LSTM architecture achieved up to 94% accuracy during training. The
    ```bash
    docker run -it -p 4000:5000 vid_class
 
-.. **Access the web application: Open your browser and visit:**
+3. **Access the web application: Open your browser and visit:**
    ```bash
    http://localhost:4000/
