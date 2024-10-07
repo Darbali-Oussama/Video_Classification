@@ -1,17 +1,29 @@
 # Violent_Videos_Classification
 
-Extracting frames from violent and non-violent videos using OpenCV library. 
-Building two models one using CNN-RNN architecture and the other one using pretrained Mobilnet model and LSTM and the integration of YOLOv8 and YOLO-NAS for detection. 
-Training the model and getting up to 94% accuracy using Mobilnet-LSTM architecture. Deploying the model using Flask and containerizing it using Docker.
+This project focuses on classifying violent and non-violent videos by extracting frames using the OpenCV library. Two different models are developed:
 
-Technologies: TensorFlow, Keras, CNN, LSTM, Mobilnet, YOLO, Fine-tuning, OpenCV, Flask, Docker.
+1. A CNN-RNN architecture.
+2. A model combining a pretrained Mobilenet with LSTM, enhanced by YOLOv8 and YOLO-NAS for object detection.
 
+The Mobilenet-LSTM architecture achieved up to 94% accuracy during training. The model is deployed with Flask and containerized using Docker for easy deployment.
 
-Build the Docker image:
-docker build -t vid_class .
+### Technologies Used:
+- TensorFlow, Keras
+- CNN, LSTM
+- Mobilenet, YOLOv8, YOLO-NAS
+- OpenCV, Flask, Docker
+- Fine-tuning and Transfer Learning
 
-Run the container on a port of your choice:
-docker container run -it -p 4000:5000 vid_class
+### How to Build and Run
 
-Access the page in a browser: Open your browser and go to:
-http://localhost:4000/
+1. **Build the Docker image:**
+   ```bash
+   docker build -t vid_class .
+
+2. **Run the container (choose a port):**
+   ```bash
+   docker run -it -p 4000:5000 vid_class
+
+.. **Access the web application: Open your browser and visit:**
+   ```bash
+   http://localhost:4000/
